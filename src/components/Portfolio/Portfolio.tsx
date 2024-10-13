@@ -7,7 +7,7 @@ import BarberImage from "../../assets/images/image_2024_10_11T14_09_58_211Z.png"
 
 const Portfolio: React.FC = () => {
   return (
-    <section className="bg-gradient-to-b from-gray-900 to-gray-800 py-16">
+    <section className="bg-gray-900 py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-4xl font-bold text-center text-white mb-12">Our Portfolio</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
