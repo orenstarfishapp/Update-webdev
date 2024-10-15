@@ -1,0 +1,38 @@
+name: Build and deploy
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    name: Test and Build React app
+    steps:
+      - name: test react app
+        uses: actions/checkout@v4
+
+      - name: Setup NodeJS env
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+        
+      - name: Install dependencies
+        run: npm install
+
+      - name: Test application
+        run: npm run test
+
+      - name: Build application
+        run: npm run build
+
+      - name: Deploy to DigitalOcean server
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{secrets.HOST}}
+          username: ${{secrets.USERNAME}}
+          password: ${{secrets.PASSWORD}}
+          port: ${{secrets.PORT}}
+          source: "./build/Update-webdev/"
+          target: "/var/www/socialdev.co.il"
