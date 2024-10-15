@@ -21,6 +21,9 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      # - name: Lint application
+      #   run: npm run lint
+
       # - name: Test application
       #   run: npm run test
 
@@ -34,5 +37,14 @@ jobs:
           username: ${{secrets.USERNAME}}
           password: ${{secrets.PASSWORD}}
           port: ${{secrets.PORT}}
-          source: "./build/Update-webdev/"
+          source: "./build/*"
           target: "/var/www/socialdev.co.il"
+
+      - name: Restart Nginx
+        uses: appleboy/ssh-action@v1.1.0
+        with:
+          host: ${{secrets.HOST}}
+          username: ${{secrets.USERNAME}}
+          password: ${{secrets.PASSWORD}}
+          port: ${{secrets.PORT}}
+          script: systemctl restart nginx
