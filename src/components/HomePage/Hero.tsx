@@ -1,6 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect, useState } from "react";
-import HeroBg from "../../assets/images/Rectangle.png";
+// import HeroBg from "../../assets/images/Rectangle.png";
 import HeroImage from "../../assets/images/hero.png";
 import ReactTypingEffect from "react-typing-effect";
 
@@ -17,7 +17,7 @@ const Hero: React.FC = () => {
   const [charIndex, setCharIndex] = useState(0);
   const typingSpeed = 100;
   const pauseBetweenStrings = 1500;
-
+  console.log(".......................")
   useEffect(() => {
     if (charIndex < strings[currentStringIndex].length) {
       const timeout = setTimeout(() => {

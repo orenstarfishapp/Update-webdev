@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Gem, Pen, Link, Star } from "lucide-react";
-import axios from "axios";
+// import axios from "axios";
 
 const OurWay: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -22,10 +22,10 @@ const OurWay: React.FC = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
-      const response = await axios.post(
-        "http://localhost:5000/api/leads",
-        formData
-      );
+      // const response = await axios.post(
+      //   "http://localhost:5000/api/leads",
+      //   formData
+      // );
       setResponseMessage("Lead submitted successfully!");
       setError("");
     } catch (err) {

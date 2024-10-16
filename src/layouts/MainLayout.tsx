@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Header from "../components/layoutComponents/Header";
 import Footer from "../components/layoutComponents/Footer";
 import ScrollToTopButton from "../components/ScrollToTopButton";
-import LeadModal from "../components/Modals/LeadModal";
+// import LeadModal from "../components/Modals/LeadModal";
 
 interface LayoutProps {
   children: React.ReactNode;
