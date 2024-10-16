@@ -11,7 +11,7 @@ const Hero: React.FC = () => {
     "תתחיל כאן ותן לעסק שלך להבלט",
   ];
 
-  const [_displayedString, setDisplayedString] = useState("");
+  const [displayedString, setDisplayedString] = useState("");
   const [currentStringIndex, setCurrentStringIndex] = useState(0);
   const [charIndex, setCharIndex] = useState(0);
   const typingSpeed = 100;
