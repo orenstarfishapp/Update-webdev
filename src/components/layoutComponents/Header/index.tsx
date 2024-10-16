@@ -34,40 +34,40 @@ const Header: React.FC<HeaderProps> = ({ navItems }) => {
         style={{ backgroundColor: bgColor, minHeight: "100px" }}
       >
         <div className="container mx-auto my-0 flex-wrap flex-col md:flex-col xl:flex-row basis-auto flex-grow max-w-[1140px] overflow-x-hidden shrink flex items-center justify-center py-[10px] h-full">
-  <div className="flex-shrink-0 md:ml-5 w-[120px] h-[80px] flex justify-center items-center">
-    <Link to="/דף הבית" aria-label="Home Page">
-      <div className="object-contain w-full h-full">
-        <svg
-          className={`text-white h-[6rem] w-24`}
-          viewBox="0 0 100 100"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            className={`animate-bounce animate-duration-[4000ms]`}
-            d="M20,80 Q40,40 60,20 Q80,40 60,80 Z"
-            fill="#ff0000"
-          />
-          <path
-            className={`animate-bounce animate-duration-[3900ms]`}
-            d="M40,80 Q60,40 80,20 Q100,40 80,80 Z"
-            fill="#cccccc"
-          />
-        </svg>
-      </div>
-    </Link>
-  </div>
+          <div className="flex-shrink-0 md:ml-5 w-[120px] h-[80px] flex justify-center items-center">
+            <Link to="/דף הבית" aria-label="Home Page">
+              <div className="object-contain w-full h-full">
+                <svg
+                  className={`text-white h-[6rem] w-24`}
+                  viewBox="0 0 100 100"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    className={`animate-bounce animate-duration-[4000ms]`}
+                    d="M20,80 Q40,40 60,20 Q80,40 60,80 Z"
+                    fill="#ff0000"
+                  />
+                  <path
+                    className={`animate-bounce animate-duration-[3900ms]`}
+                    d="M40,80 Q60,40 80,20 Q100,40 80,80 Z"
+                    fill="#cccccc"
+                  />
+                </svg>
+              </div>
+            </Link>
+          </div>
 
-  <div className="relative order-1 w-full flex justify-center items-center">
-    {/* Desktop and Mobile Navigation */}
-    <nav className="flex flex-wrap justify-center w-full">
-      <ul className="flex flex-wrap items-center justify-center space-x-2 w-full">
-        {navItems.map((item, index) => (
-          <NavItem key={index} text={item} />
-        ))}
-      </ul>
-    </nav>
-  </div>
-</div>
+          <div className="relative order-1 w-full flex justify-center items-center">
+            {/* Desktop and Mobile Navigation */}
+            <nav className="flex flex-wrap justify-center w-full">
+              <ul className="flex flex-wrap items-center justify-center space-x-2 w-full">
+                {navItems.map((item, index) => (
+                  <NavItem key={index} text={item} />
+                ))}
+              </ul>
+            </nav>
+          </div>
+        </div>
 
       </header>
     </div>
