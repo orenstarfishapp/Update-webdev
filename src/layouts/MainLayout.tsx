@@ -8,12 +8,20 @@ interface LayoutProps {
 }
 
 const MainLayout: React.FC<LayoutProps> = ({ children }) => {
+  // const navItems = [
+  //   "דף הבית",
+  //   "אודותינו",
+  //   "תיק עבודות",
+  //   "הדרך שלנו",
+  //   "צרו קשר",
+  // ];
+
   const navItems = [
-    "דף הבית",
-    "אודותינו",
-    "תיק עבודות",
-    "הדרך שלנו",
-    "צרו קשר",
+    "Home",
+    "About",
+    "Projects",
+    "Our Team",
+    "Contact Us",
   ];
 
   return (
