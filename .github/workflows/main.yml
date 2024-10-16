@@ -28,7 +28,7 @@ jobs:
         run: npm run build
 
       - name: Backup existing application
-        uses: appleboy/scp-action@v1.1.0
+        uses: appleboy/ssh-action@v1.1.0
         with:
           host: ${{secrets.HOST}}
           username: ${{secrets.USERNAME}}
