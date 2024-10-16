@@ -25,10 +25,10 @@ const ContactForm: React.FC = () => {
     e.preventDefault();
     try {
       // Replace with your server URL
-      const response = await axios.post(
-        "http://localhost:5000/api/leads",
-        formData
-      );
+      // const response = await axios.post(
+      //   "http://localhost:5000/api/leads",
+      //   formData
+      // );
       setResponseMessage("Lead submitted successfully!");
       setError("");
     } catch (err) {

@@ -1,6 +1,5 @@
 import React from "react";
 import FooterColumn from "./FooterColumn";
-import Logo from "./Logo";
 
 interface FooterSectionProps {
   columns: {

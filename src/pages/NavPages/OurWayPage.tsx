@@ -22,10 +22,6 @@ const OurWay: React.FC = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
-      const response = await axios.post(
-        "http://localhost:5000/api/leads",
-        formData
-      );
       setResponseMessage("Lead submitted successfully!");
       setError("");
     } catch (err) {

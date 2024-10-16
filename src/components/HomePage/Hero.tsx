@@ -1,6 +1,5 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect, useState } from "react";
-import HeroBg from "../../assets/images/Rectangle.png";
 import HeroImage from "../../assets/images/hero.png";
 import ReactTypingEffect from "react-typing-effect";
 
@@ -12,7 +11,7 @@ const Hero: React.FC = () => {
     "תתחיל כאן ותן לעסק שלך להבלט",
   ];
 
-  const [displayedString, setDisplayedString] = useState("");
+  const [_displayedString, setDisplayedString] = useState("");
   const [currentStringIndex, setCurrentStringIndex] = useState(0);
   const [charIndex, setCharIndex] = useState(0);
   const typingSpeed = 100;
@@ -83,7 +82,7 @@ const Hero: React.FC = () => {
         <div className="w-full mt-10 max-md:max-w-full">
           <div className="flex items-center w-full justify-center max-md:px-5 max-md:max-w-full">
             <a
-              href="#"
+              href="/"
               className="justify-center items-start px-11 pt-5 pb-4 bg-yellow-500 rounded-[50px] max-md:px-5"
             >
               <div className=" flex gap-1.5 justify-center">
@@ -116,7 +115,7 @@ const Hero: React.FC = () => {
             style={{ width: "1006px", height: "378" }}
             src={HeroImage}
             className="object-contain w-full aspect-[2.66] max-md:max-w-full"
-            alt="Decorative image"
+            alt="Decorative photo"
           />
         </div>
       </div>
