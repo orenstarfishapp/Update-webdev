@@ -39,7 +39,7 @@ const Hero: React.FC = () => {
     }
   }, [charIndex, currentStringIndex, strings]);
   return (
-    <section className="flex bg-custom-gradient shine relative flex-col pt-52 w-full min-h-[989px] max-md:pt-24 max-md:max-w-full">
+    <section className="flex bg-custom-gradient shine relative flex-col pt-52 w-full min-h-[989px] max-md:pt-58 max-md:max-w-full">
       {/* <img
         loading="lazy"
         src={HeroBg}
