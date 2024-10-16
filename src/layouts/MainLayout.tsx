@@ -1,27 +1,20 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Header from "../components/layoutComponents/Header";
 import Footer from "../components/layoutComponents/Footer";
 import ScrollToTopButton from "../components/ScrollToTopButton";
+import LeadModal from "../components/Modals/LeadModal";
 
 interface LayoutProps {
   children: React.ReactNode;
 }
 
 const MainLayout: React.FC<LayoutProps> = ({ children }) => {
-  // const navItems = [
-  //   "דף הבית",
-  //   "אודותינו",
-  //   "תיק עבודות",
-  //   "הדרך שלנו",
-  //   "צרו קשר",
-  // ];
-
   const navItems = [
-    "Home",
-    "About",
-    "Projects",
-    "Our Team",
-    "Contact Us",
+    "דף הבית",
+    "אודותינו",
+    "תיק עבודות",
+    "הדרך שלנו",
+    "צרו קשר",
   ];
 
   return (

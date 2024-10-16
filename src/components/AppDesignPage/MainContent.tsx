@@ -1,4 +1,5 @@
 import React from "react";
+import FastImg from "../../assets/images/Blue-Yellow-3D-Happy-World-Wide-Web-Instagram-Story-768x1365.png.png";
 
 const ContentSection: React.FC = () => {
   return (

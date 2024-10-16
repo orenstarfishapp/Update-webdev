@@ -21,6 +21,9 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      # - name: Lint application
+      #   run: npm run lint
+
       # - name: Test application
       #   run: npm run test
 

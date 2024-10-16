@@ -12,6 +12,7 @@ import WebsiteConstruction from "./pages/FooterPages/WebsiteConstructionPage";
 import BuildingImageWebsitePage from "./pages/FooterPages/BuildingImageWebsitePage";
 import BuildTradingSite from "./pages/FooterPages/BuildTradingSite";
 import BuildPortalSite from "./pages/FooterPages/BuildPortalSite";
+import WebDesignPage from "./pages/FooterPages/WebDesignPage";
 import UIdesignPage from "./pages/FooterPages/UIdesignPage";
 import InterfaceDesignPage from "./pages/FooterPages/InterfaceDesignPage";
 import AppDesignPage from "./pages/FooterPages/AppDesignPage";
