@@ -1,4 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
+// eslint-disable-next-line no-template-curly-in-string
+/* eslint-disable jsx-a11y/img-redundant-alt */
 import React, { useEffect, useState } from "react";
 // import HeroBg from "../../assets/images/Rectangle.png";
 import HeroImage from "../../assets/images/hero.png";
@@ -17,7 +19,7 @@ const Hero: React.FC = () => {
   const [charIndex, setCharIndex] = useState(0);
   const typingSpeed = 100;
   const pauseBetweenStrings = 1500;
-  console.log(".......................")
+  console.log(".......................",displayedString)
   useEffect(() => {
     if (charIndex < strings[currentStringIndex].length) {
       const timeout = setTimeout(() => {
@@ -83,7 +85,7 @@ const Hero: React.FC = () => {
         <div className="w-full mt-10 max-md:max-w-full">
           <div className="flex items-center w-full justify-center max-md:px-5 max-md:max-w-full">
             <a
-              href="#"
+              href="https://socialdev.co.il"
               className="justify-center items-start px-11 pt-5 pb-4 bg-yellow-500 rounded-[50px] max-md:px-5"
             >
               <div className=" flex gap-1.5 justify-center">

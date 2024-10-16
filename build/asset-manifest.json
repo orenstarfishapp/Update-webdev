@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.1d7f8388.css",
-    "main.js": "/static/js/main.f5814a4f.js",
+    "main.js": "/static/js/main.58cdf2f7.js",
     "static/js/453.f7be5b23.chunk.js": "/static/js/453.f7be5b23.chunk.js",
     "static/media/image_2024_10_11T14_09_58_211Z.png": "/static/media/image_2024_10_11T14_09_58_211Z.842ce89b70f1877f059a.png",
     "static/media/screencapture-yoniyosha-co-il-2023-07-27-14_08_16-1.png": "/static/media/screencapture-yoniyosha-co-il-2023-07-27-14_08_16-1.fefadc2fb0d5eb958b5a.png",
@@ -12,11 +12,11 @@
     "static/media/Background.png": "/static/media/Background.75465f1646041de45d95.png",
     "index.html": "/index.html",
     "main.1d7f8388.css.map": "/static/css/main.1d7f8388.css.map",
-    "main.f5814a4f.js.map": "/static/js/main.f5814a4f.js.map",
+    "main.58cdf2f7.js.map": "/static/js/main.58cdf2f7.js.map",
     "453.f7be5b23.chunk.js.map": "/static/js/453.f7be5b23.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1d7f8388.css",
-    "static/js/main.f5814a4f.js"
+    "static/js/main.58cdf2f7.js"
   ]
 }
