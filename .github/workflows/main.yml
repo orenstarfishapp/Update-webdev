@@ -60,7 +60,7 @@ jobs:
           password: ${{secrets.PASSWORD}}
           port: ${{secrets.PORT}}
           source: "./build/*"
-          target: "/var/www/socialdev.co.il"
+          target: "/var/www/socialdev.co.il/"
 
       - name: Restart Nginx
         uses: appleboy/ssh-action@v1.1.0
