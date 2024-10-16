@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import NavItem from "./NavItem";
-import Logo from "../../../assets/images/logo1.png";
 import { Link } from "react-router-dom";
 
 interface HeaderProps {

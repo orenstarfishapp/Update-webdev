@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Gem, Pen, Link, Star } from "lucide-react";
-import axios from "axios";
+// import axios from "axios";
 
 const OurWay: React.FC = () => {
   const [formData, setFormData] = useState({
