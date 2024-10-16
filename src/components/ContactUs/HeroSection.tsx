@@ -20,7 +20,7 @@ const HeroSection: React.FC = () => {
           </div>
         </div>
         <div dir="ltr" className=" overflow-hidden absolute left-0 w-full ">
-          <img className=" h-[513.578px] w-full -z-10" src={HeroBg} />
+          <img className=" h-[513.578px] w-full -z-10" src={HeroBg} alt=""/>
         </div>
       </div>
     </section>

@@ -83,7 +83,7 @@ const ContentSection: React.FC = () => {
       </div>
 
       <div className="mt-16 text-center">
-        <a href="#" className="inline-flex items-center bg-[#F7BA00] text-white px-8 py-4 rounded-full text-xl font-semibold hover:bg-[#E5AB00] transition-colors duration-300">
+        <a href="/" className="inline-flex items-center bg-[#F7BA00] text-white px-8 py-4 rounded-full text-xl font-semibold hover:bg-[#E5AB00] transition-colors duration-300">
           למידע נוסף
           <span className="mr-2">←</span>
         </a>
