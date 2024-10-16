@@ -17,6 +17,8 @@ const Hero: React.FC = () => {
   const typingSpeed = 100;
   const pauseBetweenStrings = 1500;
 
+  console.log(displayedString);
+
   useEffect(() => {
     if (charIndex < strings[currentStringIndex].length) {
       const timeout = setTimeout(() => {
