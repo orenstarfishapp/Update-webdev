@@ -3,7 +3,7 @@ import FooterSection from "./FooterSection";
 
 const footerData = [
   {
-    title: "קידום רשתות חברתיות ",
+    title: "קידום אתרים ודיגיטל",
     items: [
       { title: "קידום ב-Facebook", url: "קידום ב-Facebook" },
       { title: "קידום ב-Instagram", url: "קידום ב-Instagram" },
@@ -11,7 +11,7 @@ const footerData = [
     ],
   },
   {
-    title: "עיצובים",
+    title: "עיצוב אתרים",
     items: [
       { title: "עיצוב UI/UX", url: "עיצוב UIUX" },
       { title: "עיצוב ממשק משתמש", url: "עיצוב ממשק משתמש" },
@@ -19,7 +19,7 @@ const footerData = [
     ],
   },
   {
-    title: "פיתוח אתרים חדשים",
+    title: "בניית אתרים",
     items: [
       { title: "בניית אתרים", url: "/בניית אתרים" },
       { title: "בניית אתר תדמית", url: "/בניית אתר תדמית" },

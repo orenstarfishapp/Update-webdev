@@ -8,7 +8,7 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
-    name: Test and Build React app
+    name: Test, Build and Deploy React app
     steps:
       - name: Get source from repo
         uses: actions/checkout@v4
@@ -21,14 +21,36 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      # - name: Lint application
-      #   run: npm run lint
-
       # - name: Test application
       #   run: npm run test
 
       - name: Build application
         run: npm run build
+
+      - name: Backup existing application
+        uses: appleboy/scp-action@v1.1.0
+        with:
+          host: ${{secrets.HOST}}
+          username: ${{secrets.USERNAME}}
+          password: ${{secrets.PASSWORD}}
+          port: ${{secrets.PORT}}
+          script: |
+            if [ -d "/var/www/socialdev.co.il" ]; then
+              # Create backup of socialdev.co.il folder
+              TIMESTAMP=$(date +'%Y-%m-%d-%H-%M-%S')
+              mkdir -p /var/www/backups
+              tar -czf /var/www/backups/socialdev-co-il-$TIMESTAMP.tar.gz /var/www/socialdev.co.il
+
+              # Remove socialdev.co.il folder
+              cd /var/www/backups
+              ls -t | sed -e '1,5d' | xargs -d '\n' rm -f
+
+              # remove existing directory
+              rm -rf /var/www/socialdev.co.il
+            fi  
+
+            # Create new directory
+            mkdir -p /var/www/socialdev.co.il
 
       - name: Deploy to DigitalOcean server
         uses: appleboy/scp-action@v0.1.7

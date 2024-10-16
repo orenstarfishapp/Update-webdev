@@ -216,6 +216,9 @@ const OurWay: React.FC = () => {
                 value={formData.topic}
                 onChange={handleChange}
               >
+                <option value="">על מה נדבר?</option>
+                <option value="אחר..">אחר..</option>
+                <option value="פיתוח ל-UC">פיתוח ל-UC</option>
                 <option value="קידום ברשתות החברתיות">קידום ברשתות החברתיות</option>
                 <option value="קידום אתרים אורגני (SEO)">קידום אתרים אורגני (SEO)</option>
                 <option value="עיצוב אתרים UI/UX">עיצוב אתרים UI/UX</option>
