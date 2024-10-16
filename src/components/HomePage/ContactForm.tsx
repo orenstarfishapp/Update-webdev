@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import axios from "axios";
 
 const ContactForm: React.FC = () => {
   // State to manage form inputs
@@ -22,6 +23,11 @@ const ContactForm: React.FC = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
+      // Send POST request to your server's endpoint
+      const response = await axios.post(
+        "http://localhost:5000/api/leads",
+        formData
+      );
       setResponseMessage("Lead submitted successfully!");
       setError("");
     } catch (err) {
