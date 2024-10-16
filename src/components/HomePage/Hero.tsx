@@ -114,10 +114,10 @@ const Hero: React.FC = () => {
         <div className="flex flex-col flex-1 justify-center items-center w-full max-md:px-5 max-md:max-w-full">
           <img
             loading="lazy"
-            style={{ width: "1006px", height: "378" }}
+            style={{ width: "1006px", height: "378px" }}
             src={HeroImage}
             className="object-contain w-full aspect-[2.66] max-md:max-w-full"
-            alt="Decorative photo"
+            alt="Decorative"
           />
         </div>
       </div>

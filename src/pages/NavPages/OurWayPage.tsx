@@ -52,7 +52,7 @@ const OurWay: React.FC = () => {
               <Icon size={64} className="text-white" />
             </div>
           </div>
-          <div className="md:w-4/5 md:border-l-4 md:border-${color} md:pl-8 text-right">
+          <div className={`md:w-4/5 md:border-l-4 md:border-${color} md:pl-8 text-right`}>
             <h2 className={`font-rubik font-bold text-3xl md:text-4xl text-${color} mb-6`}>
               <span className="relative">
                 {title}
@@ -60,12 +60,17 @@ const OurWay: React.FC = () => {
               </span>
             </h2>
             <ul className="text-white text-lg space-y-6 list-none">
-              {items.map((item, index) => (
-                <li key={index} className="relative pr-6 before:content-[''] before:absolute before:right-0 before:top-2 before:w-3 before:h-3 before:bg-${color} before:rounded-full">
-                  <p className="font-semibold mb-2">{item.title}</p>
-                  <p className="text-gray-300">{item.description}</p>
-                </li>
-              ))}
+            {items.map((item, index) => (
+              <li key={index} className="relative pr-6">
+                <span
+                  className="before:content-[''] before:absolute before:right-0 before:top-2 before:w-3 before:h-3 before:rounded-full"
+                  style={{ backgroundColor: color }} // Dynamic color using inline style
+                ></span>
+                <p className="font-semibold mb-2">{item.title}</p>
+                <p className="text-gray-300">{item.description}</p>
+              </li>
+            ))}
+
             </ul>
           </div>
         </div>
