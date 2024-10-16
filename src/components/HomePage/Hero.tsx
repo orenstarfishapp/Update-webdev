@@ -117,7 +117,7 @@ const Hero: React.FC = () => {
             style={{ width: "1006px", height: "378px" }}
             src={HeroImage}
             className="object-contain w-full aspect-[2.66] max-md:max-w-full"
-            alt="Decorative image"
+            alt="Decorative"
           />
         </div>
       </div>
