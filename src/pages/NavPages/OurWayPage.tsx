@@ -64,7 +64,7 @@ const OurWay: React.FC = () => {
               <li key={index} className="relative pr-6">
                 <span
                   className="before:content-[''] before:absolute before:right-0 before:top-2 before:w-3 before:h-3 before:rounded-full"
-                  style={{ backgroundColor: color }} // Dynamic color using inline style
+                  style={{ backgroundColor: color }}
                 ></span>
                 <p className="font-semibold mb-2">{item.title}</p>
                 <p className="text-gray-300">{item.description}</p>
