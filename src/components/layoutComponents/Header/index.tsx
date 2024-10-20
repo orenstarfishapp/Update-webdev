@@ -34,8 +34,8 @@ const Header: React.FC<HeaderProps> = ({ navItems }) => {
       >
         <div className="container mx-auto mr-2 my-0 flex-wrap pl-4 flex-row md:flex-col xl:flex-row basis-auto flex-grow max-w-[1140px] w-full shrink flex items-center lg:justify-between py-[10px] h-full relative">
           <div className="flex-1 order-1">
-            <nav className="flex justify-center space-x-4">
-              <ul className="flex items-center w-full justify-center">
+            <nav className="flex justify-center">
+              <ul className="flex items-center w-full justify-right mr-24">
                 {navItems.map((item, index) => (
                   <NavItem key={index} text={item} />
                 ))}
