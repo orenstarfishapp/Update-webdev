@@ -1,18 +1,8 @@
 import React from "react";
-import HeroBg from "../../assets/images/Background.png";
 
 const HeroSection: React.FC = () => {
   return (
-    <section className="relative flex items-center justify-center min-h-[372px] w-full text-center px-4 sm:px-6 lg:px-8 overflow-hidden">
-      <div className="absolute inset-0">
-        <img
-          src={HeroBg}
-          alt="Hero background"
-          className="w-full h-full object-cover object-center"
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#300034]/70 to-[#300034]/70"></div>
-        </div>
-      
+    <section className="relative flex items-center justify-center min-h-[372px] w-full text-center px-4 sm:px-6 lg:px-8 overflow-hidden bg-[#1E293B]">
       <div className="relative z-10 max-w-4xl mx-auto space-y-6">
         <p className="text-sm sm:text-base text-zinc-300 tracking-wider uppercase animate-fade-in-down">
           אודותינו/דף הבית
